@@ -23,14 +23,15 @@ For one Carlos-approved topic, produce a review-ready YouTube script plus either
 
 `Verified fact` must trace to a credible source. `Analysis` is the creator's interpretation and must state its reasoning. `Proposal` is a future-facing suggestion. Quotes and figures require exact source locations when practical.
 
-## Smallest initial roster
+## Initial roster
 
 | Role | Responsibility | Inputs → outputs | Approval boundary | Completion criterion |
 | --- | --- | --- | --- | --- |
 | Chief of Staff (current) | Prioritization, workflow quality, decision records | Strategy and research → scoped briefs, review packets, roadmap | Cannot approve editorial/public/production decisions | Package is coherent, traceable, and has a clear human review action |
 | Research & Editorial Producer | Source research, claim ledger, outline/script and companion draft | Approved topic → cited research package and drafts | Cannot publish, state analysis as fact, or choose commercial/editorial commitments | Every material fact is traceable; draft meets brief |
+| Content Strategist | Maintains a source-aware content matrix and recommends a balanced, feasible editorial sequence across news, AI/space, math, technology, missions, careers, and investment topics | Topic signals, source-backed candidates, and creator goals → prioritized matrix, format recommendations, and decision-ready topic briefs | Cannot approve editorial angle, make investment recommendations, publish, contact sources, or access production systems | Matrix includes sources/classifications, separates fact from analysis, and identifies the exact Carlos decision needed |
 
-Add a third role only after one thin slice: either a Learning Product Designer for repeated Math-course work or a Platform/Product Auditor after app/CMS access is provided. Carlos remains the editor, presenter, and final approver.
+The Content Strategist is the third and final role for this first operating slice. Add a Learning Product Designer only after repeated Math-course work is proven, or a Platform/Product Auditor only after app/CMS access is supplied. Carlos remains the editor, presenter, and final approver.
 
 ## Review packet template
 
