@@ -1,0 +1,19 @@
+# Example only: do not install, enable, or start during initial setup.
+# Replace bracketed values after a reviewed environment audit. Do not add secrets here.
+[Unit]
+Description=Paperclip local control plane
+After=network.target
+
+[Service]
+Type=simple
+User=[ec2-user]
+WorkingDirectory=[paperclip-working-directory]
+EnvironmentFile=-/etc/paperclip/paperclip.env
+ExecStart=[verified-current-paperclip-command]
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
