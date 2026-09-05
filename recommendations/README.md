@@ -7,6 +7,10 @@ Carlos's direction, September 5, 2026: serve ML-oriented developers with source-
 3. [Copy-paste Chief of Staff handoff](prompts/chief-of-staff.md) — start here when ready to route work.
 4. [Producer and implementation prompts](prompts/implementation.md) and [optional role additions](prompts/role-additions.md).
 
+5. [Content Strategist and Content Creator proposals](003-content-agent-proposals.md) — review findings, responsibility split, and individual prompts.
+
+6. [Business Strategist proposal](004-business-strategist.md) and [complete proposed system prompt](prompts/business-strategist-system.md) — P&L, SWOT, trends, competitors, and planning.
+
 ## Editorial acceptance rubric
 
 - Opening minute names a concrete question, equation, runnable artifact, and experiment the viewer will understand.

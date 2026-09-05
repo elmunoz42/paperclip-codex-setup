@@ -1,5 +1,7 @@
 # Content engine: first thin slice
 
+**September 5 technical-direction update:** the initial workflow below is preserved as setup context. For current technical episodes, use the [math-and-code rubric](../recommendations/README.md) and [proposed Strategist/Creator responsibilities](../recommendations/003-content-agent-proposals.md). A companion outline alone does not complete the new notebook deliverable. Runtime role names and adoption remain to be verified by Chief of Staff.
+
 ## Outcome
 
 For one Carlos-approved topic, produce a review-ready YouTube script plus either a companion article outline or a Python-notebook outline. This is a draft package, not a publishing workflow.

@@ -8,6 +8,8 @@ Our primary audience is ML-oriented developers who want mathematics and code. Re
 
 Record my SPA-12 decision as **revise**. Preserve the prior QA evidence, but replace the general-audience angle with a concrete technical lesson about position uncertainty and path feasibility. Produce revision 3 with the learning promise in the opening minute and a runnable notebook companion. Follow the notebook contract; distinguish mission evidence from teaching approximations. Use the producer and implementation prompts as task briefs within the existing roster. Verify actual SPA-12/13/14 state before updating live tracking; avoid duplicate issues and do not treat this repository as a live export.
 
+Use `recommendations/003-content-agent-proposals.md` and the individual Strategist/Creator prompts to clarify ownership. Verify whether Content Creator is the existing Research & Editorial Producer; avoid duplicate production assignments.
+
 First resolve the mission-source evidence, then have an implementer build and test the small notebook, then independently QA one consolidated script/notebook review packet. Record real test results, remaining uncertainty, and what Carlos should review. Do not claim completion from a plan alone.
 
 Queue the Apollo idea as a second proposal. Return a bounded feasibility note tracing one historical routine to an interactive mathematical lesson. Recommend whether a teaching simulation or existing emulator is appropriate. Do not start a full emulator rewrite or deploy an app.

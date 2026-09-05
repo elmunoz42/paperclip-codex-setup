@@ -22,6 +22,9 @@ Carlos requested a technical revision of SPA-12 on September 5. E1–E3 remain c
 - [x] E1–E3: verified live handoff, completed independent QA, and assembled the revised packet.
 - [x] E4–E5: Carlos requested revision; technical rubric and available metrics recorded.
 - [x] T0: [Technical lesson spec and handoffs](specs/2026-09-05-technical-lessons/tasks.md) created.
+- [x] T6: [Strategist and Creator role review and prompts](../recommendations/003-content-agent-proposals.md) prepared.
+- [x] T8: [Business Strategist prompt and initial assignment](../recommendations/004-business-strategist.md) prepared; not activated.
+- [ ] T7: Chief of Staff verifies role mapping; Carlos decides adoption.
 - [ ] T1–T5: Source verification, notebook, revised packet, review, and Apollo feasibility.
 - [ ] E6: apply feedback to follow-up briefs.
 

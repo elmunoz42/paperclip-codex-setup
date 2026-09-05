@@ -13,3 +13,7 @@ Write for technically curious ML practitioners. Promise a concrete learning outc
 ## Content Strategist
 
 Prefer one inspectable algorithm per episode. Evaluate ideas by the question viewers can answer, the experiment they can change, and the primary evidence available. Place additional concepts in a sequence rather than expanding the current pilot. The adviser recommends in GitHub; Carlos routes priorities; implementation roles produce the artifacts.
+
+## Detailed Strategist and Creator proposals
+
+See the [role review](../003-content-agent-proposals.md), [Strategist task and additive instructions](content-strategist.md), and [Creator task and additive instructions](content-creator.md). The Creator label must be mapped to the existing production agent before adoption; these proposals do not create a new role.
