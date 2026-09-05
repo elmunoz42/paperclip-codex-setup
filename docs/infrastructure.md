@@ -1,38 +1,30 @@
 # Infrastructure
 
-## Current verified posture
+## Verified posture — September 5, 2026
 
-Paperclip is running and listening on `127.0.0.1:3100`. The host has 3.7 GiB RAM and a 4 GiB unused swap file. Do not stop/restart Paperclip or remove swap during this initial setup.
+Paperclip runs as the `paperclipai.service` systemd user service and listens on `127.0.0.1:3100`. Hermes's dashboard runs as `hermes-dashboard.service` on `127.0.0.1:9119`; its service is enabled and user lingering is enabled. No reboot test was performed during the Hermes setup.
 
-## Safe tmux-to-systemd migration path (documented only)
+The host has 2 vCPUs, 3.7 GiB RAM, and 4 GiB swap. After dashboard and TUI startup testing, approximately 2.2 GiB RAM and 17 GiB disk remained available. These are point-in-time observations; monitor actual concurrent workloads and retain swap.
 
-### Preconditions
+See [Hermes setup and verification](hermes-setup.md) for installation, CEO configuration, browser chat, SSH forwarding, and the [dashboard service template](../ops/systemd/hermes-dashboard.service.example).
 
-1. Confirm the exact command, working directory, Node path, user, and required non-secret environment variables from the current live process.
-2. Confirm how Paperclip currently receives secrets; place no secret values in a unit file or repository.
-3. Review [the example unit](../ops/systemd/paperclip.service.example) locally and have Carlos approve a maintenance window.
-4. Capture baseline health: process PID/command, `ss` listener on 127.0.0.1:3100, Paperclip health endpoint if available, `free -h`, `swapon --show`, and recent logs.
-5. Install the unit outside this repository only after review, using a root-owned environment file with restrictive permissions if one is required.
+## Operating checks
 
-### Controlled cutover
+```bash
+systemctl --user status paperclipai.service hermes-dashboard.service
+curl -fsS http://127.0.0.1:3100/api/health
+curl -fsS http://127.0.0.1:9119/api/status
+free -h
+```
 
-1. Validate the unit syntax with `systemd-analyze verify` before enabling it.
-2. Do not enable/start it while the tmux-managed process owns port 3100.
-3. During the approved window, stop the old process once, start the unit, then verify service status, listener binding, health endpoint, logs, and a fresh Paperclip interaction.
-4. Observe memory and swap use for a normal workload before considering any swap change.
+Keep both listeners on loopback and access through SSH tunnels. Do not commit local unit exports containing host-specific values or any credentials. Review runtime logs locally.
 
-### Rollback
+The [older Paperclip unit example](../ops/systemd/paperclip.service.example) is a historical migration sketch, not the currently installed user service. Do not install it alongside the existing service. Future Paperclip changes should first inspect the actual user unit, health, and backup status, then define a maintenance window and rollback.
 
-If startup, health, authentication, binding, or behavior is degraded: stop and disable the new unit; restore the prior tmux launch command; verify the same baseline checks; retain logs and the unit for diagnosis. Do not delete the swap file.
+## Models and team
 
-### Verification criteria
+The new CEO runs `hermes_local` with `openai-codex`, `gpt-6-astra`, and high reasoning. A full Paperclip run verified its identity and reporting line. Chief of Staff retains `gpt-5.6-sol` with its existing cheaper `gpt-5.6-terra` profile; this setup did not re-test its inference. Specialists remain under the Chief of Staff. Historical model-failure notes are not current model-selection instructions.
 
-- The service runs as the intended non-root user.
-- It binds only to `127.0.0.1:3100` unless an approved architecture changes that.
-- Restart policy works on a safe test only after functional health is confirmed.
-- Logs are available through `journalctl -u paperclip`.
-- No secrets appear in the unit, repository, process list, or logs.
+## Recovery scope
 
-## Model pinning
-
-The original `gpt-5.6-sol` pin failed in this ChatGPT-backed runtime. The current board instruction is to use `gpt-5.6-terra`. Keep model selection explicit in Paperclip configuration; verify it in the next configuration review rather than relying on implicit defaults.
+Service persistence is configured; complete backup coverage, encrypted off-host recovery, and an isolated restore rehearsal are not established by this setup. Keep the [persistence/recovery checklist](../agent-os/specs/2026-09-05-0200-persistence-recovery/tasks.md) as separate work. Do not mark all recovery tasks complete based on a healthy service or Git push.

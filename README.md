@@ -19,7 +19,9 @@ Start with the [Mars review packet](docs/content/SPA-12-review.md), compare its 
 - [Roadmap](docs/roadmap.md): five separate workstreams and 30/60/90-day priorities.
 - [Content engine](docs/content-engine.md): the first review-ready content thin slice.
 - [Two-week backlog](docs/backlog.md): actionable starting sprint.
-- [Infrastructure](docs/infrastructure.md): safe Paperclip persistence path; no service has been activated.
+- [Infrastructure](docs/infrastructure.md): current Paperclip/Hermes services, localhost access, and recovery scope.
+
+- [Hermes CEO and dashboard](docs/hermes-setup.md): setup runbook, service template, and browser-chat access.
 
 ## Repository boundary
 

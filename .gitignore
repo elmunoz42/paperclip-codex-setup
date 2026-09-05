@@ -53,3 +53,8 @@ kubeconfig
 __pycache__/
 *.pyc
 gitleaks-report*
+
+# Hermes private state and local provisioning exports
+.hermes/
+hermes-ceo/
+hermes-setup-local/

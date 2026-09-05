@@ -1,6 +1,6 @@
 # Public repository safety
 
-This public portfolio contains operating standards, specs, selected draft work products, and reviewed examples. It does not need live credentials, databases, raw run logs, or exported account/session state.
+This public portfolio contains operating standards, specs, selected draft work products, and reviewed examples. It does not need live credentials, databases, raw run logs, or exported account/session state. Hermes profiles, memory, skills learned from private work, OAuth state, and local provisioning exports also stay outside this public repository. See [the Hermes runbook](docs/hermes-setup.md).
 
 ## Before committing
 

@@ -1,0 +1,21 @@
+# Example user service; resolve PATH placeholders before installing.
+# Install at ~/.config/systemd/user/hermes-dashboard.service.
+# Pre-build the frontend and create %h/workspace/hermes-ceo first.
+[Unit]
+Description=Hermes web dashboard and browser TUI
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/workspace/hermes-ceo
+Environment=HERMES_HOME=%h/.hermes
+Environment=PYTHONUNBUFFERED=1
+Environment="PATH=%h/.hermes/hermes-agent/venv/bin:%h/.local/bin:/REPLACE_WITH_NODE_BIN:/REPLACE_WITH_RIPGREP_BIN:/usr/local/bin:/usr/bin:/bin"
+ExecStart=%h/.local/bin/hermes dashboard --host 127.0.0.1 --port 9119 --no-open --skip-build
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+
+[Install]
+WantedBy=default.target

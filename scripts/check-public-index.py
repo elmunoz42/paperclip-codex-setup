@@ -21,7 +21,7 @@ def main():
         print("Commit blocked: install Gitleaks before committing. See SECURITY.md.")
         return 1
 
-    private_dirs = {".paperclip", ".codex", ".aws", ".ssh", ".kube", "secrets", ".secrets", "backups"}
+    private_dirs = {".hermes", "hermes-ceo", "hermes-setup-local", ".paperclip", ".codex", ".aws", ".ssh", ".kube", "secrets", ".secrets", "backups"}
     private_names = {"auth.json", "credentials", "credentials.json", "id_rsa", "id_ed25519", "id_ecdsa", ".envrc", ".netrc", ".npmrc", ".pypirc", "kubeconfig"}
     private_suffixes = (".pem", ".key", ".p12", ".pfx", ".jks", ".keystore", ".db", ".sqlite", ".sqlite3", ".sql", ".sql.gz", ".dump", ".log", ".ndjson", ".zip", ".tar", ".tar.gz", ".tgz", ".bak", ".tfvars", ".tfvars.json")
     entries = subprocess.check_output(["git", "ls-files", "--stage", "-z"]).split(b"\0")
