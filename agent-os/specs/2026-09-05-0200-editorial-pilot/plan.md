@@ -1,6 +1,6 @@
 # Complete the first editorial package
 
-Status: planned; implementation remains open.
+Status: E1–E3 complete in the repository; E4 awaits Carlos review. E5–E6 depend on that feedback. See the [review packet](../../../docs/content/SPA-12-review.md).
 
 Accountable owner: Chief of Staff.
 

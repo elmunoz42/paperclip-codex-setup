@@ -30,3 +30,26 @@ backups/
 !.claude/commands/
 .claude/commands/*
 !.claude/commands/agent-os/
+
+# Public portfolio: local secrets, generated artifacts, and scanner reports
+.envrc
+.netrc
+.npmrc
+.pypirc
+kubeconfig
+.kube/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.keystore
+*.jks
+*.dump
+*.bak
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+__pycache__/
+*.pyc
+gitleaks-report*

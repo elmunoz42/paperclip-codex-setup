@@ -1,7 +1,7 @@
 # Draft for Carlos review — Content-Creator Trial Evaluation
 
 **Intended audience:** Carlos Munoz Kampff, final hiring and editorial approver\
-**Evaluated artifact:** [Research & Editorial Producer trial packet](/api/attachments/d433a3c9-da94-48da-9afd-a6cbb45a7dea/content)\
+**Evaluated artifact:** [Research & Editorial Producer trial packet](docs/content/SPA-10-research-editorial-producer-trial.md)\
 **Evaluation date:** 2026-09-04\
 **Status:** Decision support only. Not approved for publication, production access, outreach, or spend.
 

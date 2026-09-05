@@ -2,6 +2,14 @@
 
 This repository is the durable operating system for the Space Exploration News agent team. It holds strategy, editorial workflows, decisions, runbooks, and plans—not production website or application source code.
 
+## For portfolio reviewers
+
+This is a working example of an AI-assisted editorial operation: explicit specifications, source attribution, independent QA, human review gates, and evidence-backed task status. It documents both delivered work and unresolved limits.
+
+Start with the [Mars review packet](docs/content/SPA-12-review.md), compare its [QA corrections](docs/content/SPA-12-qa-report.md), then inspect the [spec and task evidence](agent-os/specs/2026-09-05-0200-editorial-pilot/tasks.md). The content remains a draft; a completed agent task is not a claim of publication readiness.
+
+[Public repository safety](SECURITY.md) explains exclusions, the local commit check, and the scope of the security scan. Runtime credentials, databases, and raw execution logs belong outside this repository.
+
 ## Start here
 
 - [Vision](docs/vision.md): purpose, audience, and operating principles.

@@ -3,7 +3,8 @@
 ## Package 1: Mars rover AI waypoint planning
 
 **Prepared:** 2026-09-05\
-**Editorial status:** Offline draft for Chief of Staff source/metadata/claim-mapping QA, then Carlos review. This is not final editorial approval or authorization to publish, produce, upload, contact sources, incur spend, or access production systems.\
+**Repository revision:** 2 — independent QA and editorial cleanup, 2026-09-05\
+**Editorial status:** Revised draft for Carlos review. QA was performed by the Codex collaborator in this conversation; the original Paperclip Chief of Staff confirmation is not represented as accepted. See the [QA report](SPA-12-qa-report.md) and [review packet](SPA-12-review.md).\
 **Approved angle:** “When a Mars rover uses generative AI to plan a drive, what is the AI deciding—and what remains under human control?”
 
 ## 1. Topic brief
@@ -22,32 +23,32 @@
 
 ## 2. Claim-level source ledger
 
-Access date for every URL: **2026-09-05**.
+QA access date: **2026-09-05**. Seven external source records (C-01–C-07); C-08–C-09 are analysis, not additional sources. Access methods and metadata limits are recorded in the [QA report](SPA-12-qa-report.md).
 
 | ID | Material claim | Label | Canonical URL | Publisher | Publication date | Claim-specific support and limitation |
 | --- | --- | --- | --- | --- | --- | --- |
 | C-01 | A vision-language model used HiRISE orbital imagery and digital-elevation-model slope data to generate waypoints for drives on Dec. 8 and 10, 2025; JPL ran commands through a digital twin and verified more than 500,000 telemetry variables before sending them; the rover drove 210 m and 246 m. | **Verified fact** | https://www.jpl.nasa.gov/news/nasas-perseverance-rover-completes-first-ai-planned-drive-on-mars/ | NASA Jet Propulsion Laboratory | 2026-01-30 | Primary mission release. Supports inputs, output, workflow, dates, and distances. It does not establish independent command authority, comparative safety, or workload savings. |
 | C-02 | AutoNav uses rover-camera data to build 3D terrain maps, identify hazards, and plan around obstacles; the team develops plans, signs off, and transmits instructions. | **Verified fact** | https://www.jpl.nasa.gov/news/nasas-self-driving-perseverance-mars-rover-takes-the-wheel/ | NASA Jet Propulsion Laboratory | 2021-07-01 | Primary operational explainer. Supports ground-team/onboard-navigation separation. The headline “self-driving” is shorthand, not unlimited autonomy. |
 | C-03 | During the 2023 Snowdrift Peak traverse, humans mapped the general route while AutoNav handled finer navigation and detoured around rocks not visible in orbital imagery. | **Verified fact** | https://www.jpl.nasa.gov/news/autonomous-systems-help-nasas-perseverance-do-more-science-on-mars/ | NASA Jet Propulsion Laboratory | 2023-09-21 | Primary mission example of layered decision-making. Its speed comparisons are context-specific and are not generalized here. |
-| C-04 | Perseverance uses several bounded autonomy systems rather than one general-purpose “AI brain”; the reviewed paper describes autonomous capabilities spanning navigation, science targeting, and planning. | **Verified fact** | https://doi.org/10.1126/scirobotics.adi3099 | Science Robotics (AAAS) | 2023-07-19 | Peer-reviewed technical overview. Predates the 2025 generative-waypoint trial and does not evaluate it. |
-| C-05 | Rapid-traverse operations could combine an initial directed drive, intermediate waypoints selected by planners, and AutoNav for real-time hazard avoidance. | **Verified fact** | https://doi.org/10.1109/AERO55745.2023.10115835 | IEEE Aerospace Conference | 2023-03-04 | JPL-authored conference paper supporting the distinction among directed driving, waypoint placement, and onboard navigation. Describes 2022 operations, not the AI trial. |
-| C-06 | ENav evaluates terrain and candidate paths onboard; as of sol 1312, about 90% of Perseverance’s 32.1 km of driving had used ENav to evaluate terrain. | **Verified fact** | https://doi.org/10.1109/TFR.2025.3636366 | IEEE Transactions on Field Robotics | 2025-11-24 | Peer-reviewed algorithm and operations context. The percentage is cumulative through 2024-10-28 and should not be treated as a statistic about the December 2025 demonstration. |
-| C-07 | Anthropic identifies Claude as the model used, says it built waypoints in 10 m segments, and reports that engineers made minor changes after review. | **Verified fact** | https://www.anthropic.com/features/claude-on-mars | Anthropic | 2026-01-30 | First-party vendor disclosure adds implementation detail. Interested-party evidence; its estimated time savings and future autonomy claims are not independently established here. |
+| C-04 | The paper surveys AutoNav, autonomous science targeting (AEGIS), and an OnBoard Planner then planned for operational use. “Bounded capabilities” is our interpretation of that architecture. | **Verified fact** | https://doi.org/10.1126/scirobotics.adi3099 | Science Robotics (AAAS) | 2023-07-26 | Corrected against the author’s JPL bibliography. Abstract checked via indexed research record; publisher full text returned 403. OBP was described as planned for operational use in September 2023, not already operational at publication. Predates the waypoint trial. |
+| C-05 | Rapid-traverse operations could combine an initial directed drive, intermediate waypoints selected by planners, and AutoNav for real-time hazard avoidance. | **Verified fact** | https://doi.org/10.1109/AERO55745.2023.10115835 | IEEE Aerospace Conference | 2023; JPL lists 2023-03-07 | JPL author bibliography supplies March 7 as the conference listing date; precise online-publication date not verified. Section 7 (p. 7), checked through indexed JPL paper text, supports directed start, planner-selected waypoints, and AutoNav hazard avoidance. Describes earlier operations, not the AI trial. |
+| C-06 | ENav evaluates terrain and candidate paths onboard; as of sol 1312, about 90% of Perseverance’s 32.1 km of driving had used ENav to evaluate terrain. | **Verified fact** | https://doi.org/10.1109/TFR.2025.3636366 | IEEE Transactions on Field Robotics | 2025-11-24 | IEEE-indexed abstract supports the historical statistic; JPL author bibliography confirms publication date. Full text was not reviewed. Removed the statistic from narration; it is optional background, not evidence about the December demonstration. |
+| C-07 | Anthropic identifies Claude as the model used, says it built waypoints in 10 m segments, and reports that engineers made minor changes after review. | **Verified fact** | https://www.anthropic.com/features/claude-on-mars | Anthropic | Not displayed in retrieved page | Full page checked; the original January 30 publication date was not substantiated by the visible article and is no longer asserted. JPL independently identifies Claude. Ten-meter segments and minor route edits remain attributed vendor details. |
 | C-08 | The generative model performed one bounded part of ground planning; it did not replace mission intent, engineering review, command transmission, or onboard local navigation in the documented demonstration. | **Analysis** | Synthesis of C-01, C-02, C-03, C-05, and C-07 | Space Exploration News draft | 2026-09-05 | Claim wording deliberately tracks documented actions. “Did not replace” refers to these two demonstrations, not every future workflow. |
 | C-09 | Two completed drives do not by themselves demonstrate improved safety, speed, consistency, or labor efficiency versus human waypoint planning. | **Analysis / open question** | Evidentiary gap across C-01 and C-07 | Space Exploration News draft | 2026-09-05 | Anthropic reports an internal estimate of halved planning time; NASA’s release supplies no comparative study. Do not state a benefit as fact without data or independent evaluation. |
 
 ## 3. YouTube outline
 
 1. **Hook — “Who drove?”** Two real Mars drives, and why the obvious headline is incomplete. [C-01]
-2. **Define a waypoint.** A fixed location where the rover takes up a new set of instructions; distinguish a strategic route from wheel-by-wheel motion. [C-01, C-05]
+2. **Define a waypoint.** A target location along a route; distinguish a strategic route from wheel-by-wheel motion. [C-01, C-05]
 3. **Show the inputs and output.** Orbital imagery plus terrain-slope data went in; a continuous waypoint path came out. [C-01]
 4. **Insert the validation gate.** Engineers reviewed the work, used rover simulation/digital-twin checks, and then the commands were sent. [C-01, C-07]
 5. **Move onboard.** AutoNav used rover cameras to detect hazards and select short local paths. [C-02, C-03, C-06]
 6. **Draw the decision stack.** Mission intent → proposed waypoints → engineering validation/uplink → local navigation.
 7. **Demonstrated versus not demonstrated.** Two successful drives are not evidence of unsupervised mission control or comparative gains. [C-01, C-09]
-8. **Close on the real significance.** One labor-intensive planning step was tested with generative AI inside an existing safety and operations workflow. [C-08]
+8. **Close on the real significance.** One planning step was tested with generative AI alongside established engineering checks. [C-08]
 
-## 4. Spoken draft (945 words including production cues and inline claim labels)
+## 4. Spoken draft (828 spoken words; source and production cues excluded)
 
 **Proposal — script.**
 
@@ -73,9 +74,9 @@ The public NASA account does not say the model chose Perseverance’s science go
 
 [ON SCREEN: “AI proposal → engineering review and simulation → uplink”]
 
-This is the safest answer to what remained under human control: in the workflow described publicly, people framed and ran the demonstration, reviewed and simulated its output, adjusted part of the route, and sent the resulting commands. NASA’s earlier description of normal Perseverance operations says specialists develop the navigation and activity plan, sign off, and beam instructions to Mars. [**Verified fact:** C-01, C-02, C-07]
+Here is what the public accounts establish: in the workflow described publicly, people framed and ran the demonstration, reviewed and simulated its output, adjusted part of the route, and sent the resulting commands. NASA’s earlier description of normal Perseverance operations says specialists develop the navigation and activity plan, sign off, and beam instructions to Mars. [**Verified fact:** C-01, C-02, C-07]
 
-Notice how narrow that wording is. We can document those actions. We cannot turn them into a complete responsibility chart for every operational decision without more evidence. [**Analysis:** editorial limitation]
+For this story, we can follow the actual handoffs without guessing who had authority over every possible mission decision. [**Analysis:** editorial limitation]
 
 Now move from Earth to the rover.
 
@@ -83,21 +84,21 @@ Route planning is not the same as local navigation. Orbital images provide the b
 
 We saw that division of labor before this generative-AI test. In 2023, human planners mapped Perseverance’s general route through a boulder field called Snowdrift Peak. AutoNav handled the finer path, including detours around rocks that were not visible in the orbital imagery. [**Verified fact:** C-03]
 
-The rover’s current Enhanced Autonomous Navigation system, or ENav, evaluates terrain and candidate paths while respecting engineering constraints. A technical paper reports that, by October 2024, roughly 90 percent of Perseverance’s 32.1 kilometers of driving had used ENav to evaluate terrain. That statistic gives context for how established local autonomy already was. It does not measure the new generative-AI experiment. [**Verified fact:** C-06]
+There is a useful distinction here for anyone who writes software. Choosing a destination, proposing a route, checking that proposal, and reacting to nearby obstacles are separate jobs. A change to one job does not tell us that the others have disappeared. Think of the diagram as a set of responsibilities, rather than a single box labeled artificial intelligence. [**Analysis:** C-08; **Proposal:** teaching analogy]
 
 [ON SCREEN: Orbital route with widely spaced dots beside rover-camera view bending around a rock.]
 
 So the new part was not that Perseverance suddenly learned to avoid a rock. The new part was upstream: a generative model drafted the waypoint trail normally prepared by human route planners. Existing onboard software still handled a different problem—choosing safe, immediate motion through terrain the rover could see. [**Analysis:** C-08]
 
-That is why saying simply “AI drove on Mars” is misleading. Perseverance does not have one all-purpose AI brain. Its autonomy consists of bounded capabilities. A peer-reviewed overview describes separate systems for navigation, science targeting, and onboard planning. Even inside driving, a JPL operations paper distinguishes directed driving, intermediate waypoints, and real-time hazard avoidance. [**Verified fact:** C-04, C-05]
+That is why saying simply “AI drove on Mars” is misleading. Perseverance does not have one all-purpose AI brain. Its autonomy consists of bounded capabilities. A JPL operations paper describes drive plans that start with a directly specified path, then switch to AutoNav and use intermediate waypoints. In that mode, the rover handles hazard avoidance locally. This is a concrete example of different kinds of control working together within one drive. [**Verified fact:** C-05]
 
 [ON SCREEN: “What was demonstrated / What remains unknown”]
 
 What did these two drives demonstrate? A vision-language model generated waypoints from mission data. The commands passed the team’s checks. Perseverance then completed both drives. [**Verified fact:** C-01]
 
-What did they not establish? They did not show a generative model independently running the rover mission, authorizing its own commands, or replacing AutoNav. And successful completion alone does not prove the new method is safer, faster, or less labor-intensive than human waypoint planning. Anthropic reports an estimate that the workflow could halve planning time, but NASA’s public release provides no comparative study. That benefit remains an open question, not a verified result. [**Analysis / open question:** C-07, C-09]
+What did they not establish? They did not show a generative model independently running the rover mission, authorizing its own commands, or replacing AutoNav. Successful completion alone also does not prove that the new method is safer or saves operators time. Those are separate questions requiring comparative evidence. The releases checked for this episode do not establish an independently validated answer. [**Analysis / open question:** C-09]
 
-The careful conclusion is still remarkable. Engineers tested generative AI in one consequential piece of interplanetary route planning, checked its work, and placed it inside an established operational stack. The achievement is not a rover escaping human control. It is a sharper example of how control can be divided—across people on Earth, a model proposing a route, and a machine on Mars navigating the ground in front of it. [**Analysis:** C-08]
+The careful conclusion is still remarkable. Engineers tested generative AI in one consequential piece of interplanetary route planning, checked its work, and placed it inside an established operational stack. The useful question to carry into the next AI headline is: which decision moved, what information did that system have, and who or what checked the result? On Mars, following those handoffs gives us a much clearer picture of what was achieved. [**Analysis:** C-08]
 
 ## 5. Companion options
 
@@ -130,7 +131,7 @@ The careful conclusion is still remarkable. Engineers tested generative AI in on
 
 **Analysis.** This package narrows the earlier phrasing “humans retained mission control” to observable workflow: engineers reviewed and simulated the commands, adjusted part of the route, and sent the commands to Mars. That avoids implying a full governance or authorization structure the public sources do not document.
 
-**Proposal.** Keep the three-layer visual, but label the middle output “proposed route waypoints” until Carlos approves stronger wording. Avoid using Anthropic’s planning-time estimate in narration except as an attributed, unverified vendor claim.
+**Proposal.** Use the original conceptual handoff diagram in the review packet. This revision removes the vendor time-saving estimate and the historical ENav percentage from narration, corrects source metadata, and recommends the article companion. Format selection and final tone remain Carlos’s decisions.
 
 ## 7. Unresolved-question and editorial-risk register
 
@@ -141,12 +142,12 @@ The careful conclusion is still remarkable. Engineers tested generative AI in on
 | Did the model generate final flight commands or draft route artifacts later converted by JPL tooling? | **Open question** | NASA says the AI created waypoints and the team processed drive commands; Anthropic says Claude wrote Rover Markup Language. The exact tool boundary is not fully documented. | Use “generated waypoints” as the stable cross-source claim. |
 | “First AI-planned drive” terminology | **Analysis / risk** | “AI” can obscure decades of onboard autonomous navigation; NASA’s claim refers specifically to planning drives on another world. | Always explain the scope immediately. |
 | Companion format | **Open question** | Approved plan records no selection. | Carlos selects article or notebook; notebook then receives technical QA. |
-| Visual assets | **Open question / copyright risk** | NASA/JPL assets usually carry credits and may have third-party marks; this package does not clear any asset. | Obtain asset-specific credit/use review before production. No asset download is authorized here. |
+| Visual assets | **Open question / copyright risk** | This package does not clear any external visual asset. Use the original conceptual diagram in the review packet while production assets remain undecided. | Obtain asset-specific credit/use review before production. No asset download is authorized here. |
 | Vendor framing | **Analysis / conflict risk** | Anthropic benefits reputationally from the story. | Use its page only for attributed implementation detail and flag unverified promotional/future claims. |
 | Investment or sponsorship implications | **Analysis / risk** | AI/space coverage can be read as endorsement. | Include no investment advice, valuation language, affiliate framing, or implied sponsor endorsement. |
 
 ## 8. Research and verification disclosure
 
-**Verified process statement.** Generative AI assisted with research organization and drafting. Each cited URL was re-opened or independently surfaced during research on 2026-09-05, and claim-specific limits are recorded above. The script uses paraphrase rather than direct quotations. Bibliographic metadata and all material claim mappings remain subject to Chief of Staff QA and Carlos’s editorial review.
+**Verified process statement.** This revision was checked independently by the Codex collaborator on 2026-09-05. The QA report identifies full-page checks, indexed primary-source excerpts, and publisher access failures separately. It does not claim full-text review of every paper. The script paraphrases sources and preserves claim cues; Carlos’s editorial acceptance remains pending.
 
 **Draft for Carlos review — not for publication.**
