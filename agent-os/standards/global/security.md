@@ -1,0 +1,3 @@
+# Security standard
+
+Never commit credentials, auth/session files, private keys, environment secrets, runtime databases, backups, raw run logs, or generated instance state. Use explicit staging and inspect all commits being pushed, not just the newest diff. Ignore rules do not remove tracked secrets. Any detected secret must be removed from outgoing history before push and reported without printing it. Do not publish, deploy, change production, authentication, infrastructure, or spend without the applicable explicit authorization. A written agent boundary is not proof that the runtime enforces it.

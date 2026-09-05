@@ -1,0 +1,33 @@
+# Complete the first editorial package — tasks
+
+- [x] DOC: Save plan, shaping notes, standards, references, and task checklist. Evidence: files in this spec folder.
+
+- [ ] E1: Confirm SPA-12 reviewer and latest artifact; map SPA-13/14 dependencies without duplicating issues.
+  - Owner: Chief of Staff; depends on: None.
+  - Acceptance: Issue IDs, reviewer, next action, and current artifact revision recorded.
+  - Evidence / Paperclip issue: SPA-12; verify current state.
+
+- [ ] E2: Independently check every material claim and bibliographic record in SPA-12.
+  - Owner: Chief of Staff; depends on: E1.
+  - Acceptance: QA report lists checked sources, unsupported claims, corrections, and unresolved items.
+  - Evidence / Paperclip issue: Not yet recorded.
+
+- [ ] E3: Revise the script and assemble one review packet; recommend article companion as the initial default.
+  - Owner: Research & Editorial Producer; depends on: E2.
+  - Acceptance: One linked script, ledger, companion outline, and concise decision list; all QA corrections resolved or surfaced.
+  - Evidence / Paperclip issue: Not yet recorded.
+
+- [ ] E4: Review tone, claims, angle, and companion choice; accept, revise, or reject.
+  - Owner: Carlos; depends on: E3.
+  - Acceptance: Explicit review decision and requested revisions recorded; no publication implied.
+  - Evidence / Paperclip issue: Not yet recorded.
+
+- [ ] E5: Capture feedback as an editorial rubric and record pilot metrics.
+  - Owner: Chief of Staff; depends on: E4.
+  - Acceptance: Review minutes and revision count recorded, or explicitly unavailable; next package uses rubric.
+  - Evidence / Paperclip issue: Not yet recorded.
+
+- [ ] E6: Update the existing follow-up briefs using pilot feedback.
+  - Owner: Content Strategist; depends on: E5.
+  - Acceptance: SPA-13/14 mapped to actual approved topics and dependencies; no unsupported topic approval claims.
+  - Evidence / Paperclip issue: Not yet recorded.

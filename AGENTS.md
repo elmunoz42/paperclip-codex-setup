@@ -25,3 +25,7 @@ Deliverables identify their intended audience, source material, assumptions, unr
 ## Collaboration
 
 Begin with the minimum roster in `docs/content-engine.md`. Create specialized roles only after the thin slice exposes repeatable workload or quality needs. Escalate conflicts between speed and accuracy to Carlos.
+
+## Agent OS and progress tracking
+
+Read `agent-os/README.md`, `agent-os/progress.md`, the standards index, and the assigned spec before significant work. Use spec task IDs in handoffs. Update task checkboxes only with completion evidence; mirror relevant Paperclip issue IDs without creating duplicates. Root rules and explicit user instructions take precedence over workflow templates. Specs do not independently authorize production, publication, permissions, or spend changes.

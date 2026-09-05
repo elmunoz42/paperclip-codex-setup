@@ -18,3 +18,12 @@ Keep immersive solar-system application code and WordPress theme/plugin code in 
 ## Operating cadence
 
 Run one content thin slice before expanding the agent roster or building management software. Carlos retains editorial, factual-risk, publishing, and spend decisions.
+
+## Current execution
+
+- [Progress and next actions](agent-os/progress.md)
+- [Agent OS installation and usage](agent-os/README.md)
+- [Preserved editorial work products](docs/content/README.md)
+- [Dated audit findings](docs/audit-2026-09-05.md)
+
+Agent OS holds standards and specs; Paperclip runs and assigns the work.

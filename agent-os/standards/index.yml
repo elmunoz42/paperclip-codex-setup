@@ -1,0 +1,10 @@
+# Agent OS Standards Index
+global:
+  editorial:
+    description: Source attribution, factual QA, and editorial review boundaries
+  execution:
+    description: Ownership, dependencies, useful handoffs, and wake policy
+  security:
+    description: Secret exclusions, outgoing history review, and production boundaries
+  progress:
+    description: Evidence-backed task status and outcome measurement

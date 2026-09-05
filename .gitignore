@@ -8,3 +8,25 @@ coverage/
 .codex/
 *.pem
 *.key
+
+# Local authentication and generated runtime state
+.aws/
+.ssh/
+.secrets/
+secrets/
+auth.json
+credentials.json
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.sql.gz
+*.log
+*.ndjson
+backups/
+.claude/*
+!.claude/commands/
+.claude/commands/*
+!.claude/commands/agent-os/
