@@ -24,6 +24,8 @@ Deliverables identify their intended audience, source material, assumptions, unr
 
 ## Collaboration
 
+Carlos uses this assistant as a strategic adviser: save recommendations and proposed prompts in `recommendations/`; Carlos routes them to the Chief of Staff, and implementation agents execute. Do not treat proposed prompts as installed or automatically send handoffs. Small educational notebooks may live here as content artifacts; production applications remain separate.
+
 Begin with the minimum roster in `docs/content-engine.md`. Create specialized roles only after the thin slice exposes repeatable workload or quality needs. Escalate conflicts between speed and accuracy to Carlos.
 
 ## Agent OS and progress tracking

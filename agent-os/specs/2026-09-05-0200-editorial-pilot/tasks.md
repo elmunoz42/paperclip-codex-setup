@@ -17,19 +17,19 @@
   - Acceptance: One linked script, ledger, companion outline, and concise decision list; all QA corrections resolved or surfaced.
   - Evidence / Paperclip issue: SPA-12; [revision 2 and consolidated review packet](../../../docs/content/SPA-12-review.md).
 
-- [ ] E4: Review tone, claims, angle, and companion choice; accept, revise, or reject.
+- [x] E4: Review tone, claims, angle, and companion choice; accept, revise, or reject.
   - Owner: Carlos; depends on: E3.
   - Acceptance: Explicit review decision and requested revisions recorded; no publication implied.
-  - Evidence / Paperclip issue: Not yet recorded.
+  - Evidence: [Carlos revision feedback and rubric](../../../recommendations/README.md); repository record only.
 
-- [ ] E5: Capture feedback as an editorial rubric and record pilot metrics.
+- [x] E5: Capture feedback as an editorial rubric and record pilot metrics.
   - Owner: Chief of Staff; depends on: E4.
   - Acceptance: Review minutes and revision count recorded, or explicitly unavailable; next package uses rubric.
-  - Evidence / Paperclip issue: Not yet recorded.
+  - Evidence: [Carlos revision feedback and rubric](../../../recommendations/README.md); repository record only.
 
 - [ ] E6: Update the existing follow-up briefs using pilot feedback.
   - Owner: Content Strategist; depends on: E5.
   - Acceptance: SPA-13/14 mapped to actual approved topics and dependencies; no unsupported topic approval claims.
   - Evidence / Paperclip issue: Not yet recorded.
 
-Execution note: E1–E3 completed by the Codex collaborator under Carlos’s instruction to continue the spec. Named roles remain accountable for the ongoing workflow. E4–E6 remain open; no human review decision has been inferred.
+Execution note: E1–E3 completed by the Codex collaborator under Carlos’s instruction to continue the spec. Named roles remain accountable for the ongoing workflow. E4 records Carlos’s explicit September 5 revision request; E5 captures the rubric and unavailable metrics. E6 remains open. Technical implementation continues in the new technical-lessons spec.

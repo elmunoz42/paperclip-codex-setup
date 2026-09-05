@@ -2,7 +2,7 @@
 
 Help Carlos turn primary-source space and AI research into accurate, engaging videos and companion learning resources, with less research and editing effort.
 
-The audience includes curious non-specialists and programmers learning the mathematics and technology behind space exploration. Carlos is the editor and presenter; agents research, draft, check, and organize.
+The primary audience is ML-oriented developers learning the mathematics and code behind space exploration. Each technical episode should promise a concrete experiment early and distinguish actual mission algorithms from teaching approximations. Carlos is the editor and presenter; agents research, draft, check, and organize.
 
 This repository is the team headquarters. WordPress and the immersive solar-system application remain separate systems. See [vision](../../docs/vision.md) and [content workflow](../../docs/content-engine.md).
 

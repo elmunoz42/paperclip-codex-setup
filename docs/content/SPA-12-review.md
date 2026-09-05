@@ -2,7 +2,9 @@
 
 **Draft for Carlos review — not for publication.** Repository revision 2, 2026-09-05.
 
-## Decision requested — E4
+**Revision requested, September 5:** Carlos wants an ML-technical audience, concrete mathematics, and a runnable companion. The general-audience recommendation below is superseded by the [technical handoff](../../recommendations/README.md). Historical revision 2 is retained for comparison; it is not approved.
+
+## Historical decision request — E4
 
 Review the spoken draft below. Approve it for recording preparation, request specific edits, or reject it. The topic and cautious angle are already recorded as approved in SPA-12; no new topic approval is requested.
 
